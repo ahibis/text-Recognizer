@@ -28,7 +28,7 @@ function imgPut(e){
   console.log(img)
   if(!img) return
   src.value = img.src;
-  target.innerHTML = "вставите сюда картинку"
+  target.innerHTML = "вставьте сюда картинку"
   recognize()
 }
 </script>
@@ -43,7 +43,7 @@ function imgPut(e){
       картнка:
       <input type="file" accept=".png,.jpg" @change="imgChange">
       <div>
-      <div @input="imgPut" contenteditable="true" style="text-align: left;">вставите сюда картинку</div>
+      <div @input="imgPut" contenteditable="true" style="text-align: left;">вставьте сюда картинку</div>
       </div>
       
       <img :src="src" v-if="src" style="width:100%">
